@@ -21,15 +21,21 @@
             <!-- بداية القسم الأول  -->
             <div class="row">
                 <div class="col-md-3">
-                    <span>الرقم التسلسلي : 1</span>
+                    <div class="ltborder">
+                        <span>الرقم التسلسلي</span><br>
+                        <span>1</span>
+                    </div>
                 </div>
                 <div class="col-md-3">
-                    <span>ID:753338</span>
+                    <span>ID</span><br>
+                    <span>753338</span>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
+                    <span>تاريخ الفاتورة</span>
                     <input type="date" name="bday" class="form-control" style="text-align: center ; height: 35px">
                 </div>
-                <div class="col-md-2 offset-md-1">
+                <div class="col-md-3">
+                    <span>طريقة الدفع</span><br>
                     <select class="custom-select" style="text-align: center ; height: 35px">
                         <option value="1">كاش</option>
                         <option value="2">فيزا</option>
@@ -40,13 +46,16 @@
                 </div>
             </div>
         </div><!-- نهاية القسم الأول  -->
-        <div class="tblrecit">
-            <div class="row">
-                <!-- بداية القسم الثاني -->
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                    <legend>بيانات العميل</legend>
-                    <div class="fborder">
+        <!-- بداية القسم الثاني -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <legend class="plegend">
+                    <span class="number"><i class="fas fa-users"></i></span>
+                    بيانات العميل
+                </legend>
+                <div class="fborder">
+                    <div class="sector">
                         <div class="row">
                             <!-- بيانات العميل القسم الأيمن  -->
                             <div class="col-md-6 ">
@@ -56,27 +65,6 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text btncolor " id="basic-addon1">
                                             <i class="fas fa-list-ol btncolor"></i>
-                                        </span>
-                                    </div>
-                                    <input type="text" class="form-control">
-                                </div>
-
-                                <!-- بيانات جوال العميل -->
-                                <label>جوال العميل</label>
-                                <div class="input-group ">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text btncolor" id="basic-addon1">
-                                            <i class="fas fa-mobile-alt fa-lg btncolor"></i>
-                                        </span>
-                                    </div>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <!-- بيانات خدمة التوصيل -->
-                                <label>خدمة التوصيل</label>
-                                <div class="input-group ">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text btncolor " id="basic-addon1">
-                                            <i class="fas fa-truck btncolor"></i>
                                         </span>
                                     </div>
                                     <input type="text" class="form-control">
@@ -93,7 +81,43 @@
                                     </div>
                                     <input type="text" class="form-control">
                                 </div>
-                                <!-- بيانات خصم العميل -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sector">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>جوال العميل</label>
+                                <div class="input-group ">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text btncolor" id="basic-addon1">
+                                            <i class="fas fa-mobile-alt fa-lg btncolor"></i>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <!-- بيانات خدمة التوصيل -->
+                                <label>خدمة التوصيل</label>
+                                <div class="input-group ">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text btncolor " id="basic-addon1">
+                                            <i class="fas fa-truck btncolor"></i>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- بيانات جوال العميل -->
+                    <div class="sector">
+                        <div class="row">
+                            <div class="col-md-6">
                                 <label>خصم العميل</label>
                                 <div class="input-group ">
                                     <div class="input-group-prepend">
@@ -110,7 +134,8 @@
                                         <option value="5">جملة 5</option>
                                     </select>
                                 </div>
-                                <!-- بيانات الخصم -->
+                            </div>
+                            <div class="col-md-6">
                                 <label>الخصم</label>
                                 <div class="input-group ">
                                     <div class="input-group-prepend">
@@ -121,86 +146,86 @@
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <!-- بيانات خصم العميل -->
 
+                    <!-- بيانات الخصم -->
+
+
+                </div>
+            </div><!-- بيانات العميل القسم الأيمن  نهاية-->
+            <!-- <div class="col-md-1 modcol"></div>-->
+
+            <div class="col-md-6">
+                <!-- بيانات الفاتورة القسم الايسر بداية -->
+                <legend class="plegend"> <span class="number"><i class="fas fa-money-bill-wave"></i></span>
+                    الإجمالي النهائي
+                </legend>
+                <!-- لتنسيق الديف -->
+                <div class="fborder">
+                    <div class="row">
+                        <!-- صافي الخصم -->
+                        <div class="col-md-12" style="text-align: center">
+                            <label class=" col-md-12 lblstyle"><i class="fas fa-hand-holding-usd fa-1x btncolor2"></i> الصافي بعد الخصم</label>
+                            <div class="input-group  " style="margin-bottom: 10px">
+                                <input type=" text" class="form-control netctr">
+                            </div>
+                        </div>
+                        <!-- المبلغ المدفوع -->
+
+                        <div class="col-md-12" style="text-align: center">
+                            <label class=" col-md-12 lblstyle"><i class="fas fa-cash-register btncolor2"></i> المبلغ المدفوع</label>
+                            <div class="input-group " style="margin-bottom: 10px;">
+                                <input type="text" class="form-control netctr">
+                            </div>
+                        </div>
+
+                        <!-- المتبقي -->
+
+                        <div class="col-md-12" style="text-align: center">
+                            <label class=" col-md-12 lblstyle"><i class="fas fa-coins btncolor2"></i> المتبقي</label>
+                            <div class="input-group  ">
+                                <input type="text" class="form-control netctr">
+                            </div>
                         </div>
 
                     </div>
-                </div><!-- بيانات العميل القسم الأيمن  نهاية-->
-                <div class="col-md-1 modcol"></div><!-- عمود فارغ -->
-                <div class="col-md-5">
-                    <!-- بيانات الفاتورة القسم الايسر بداية -->
-                    <legend>الإجمالي النهائي</legend>
-                    <!-- لتنسيق الديف -->
-                    <div class="fborder">
-                        <div class="row">
-                            <!-- صافي الخصم -->
-                            <div class="col-md-12 ">
-                                <div class="col-md-6">
-                                    <label class=" lblstyle">الصافي بعد الخصم</label>
-                                </div>
-
-                                <div class="input-group col-md-12 ">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text btncolor2" id="basic-addon1">
-                                            <i class="fas fa-hand-holding-usd btncolor2"></i>
-                                        </span>
-                                    </div>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <!-- المبلغ المدفوع -->
-                            <div class="col-md-12 ">
-                                <label class="col-md-6">المبلغ المدفوع</label>
-
-                                <div class="input-group col-md-12">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text btncolor" id="basic-addon1">
-                                            <i class="fas fa-cash-register btncolor"></i>
-                                        </span>
-                                    </div>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <!-- المتبقي -->
-                            <div class="col-md-12 ">
-                                <label class="col-md-6">المتبقي</label>
-                                <!-- بيانات كود العميل -->
-                                <div class="input-group col-md-12">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text btncolor" id="basic-addon1">
-                                            <i class="fas fa-coins btncolor"></i>
-                                        </span>
-                                    </div>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- لتنسيق الديف -->
-                </div> <!-- بيانات الفاتورة القسم الايسر نهاية -->
-            </div>
-        </div><!-- نهاية القسم الثاني -->
+                </div> <!-- لتنسيق الديف -->
+            </div> <!-- بيانات الفاتورة القسم الايسر نهاية -->
+        </div>
+        <!-- نهاية القسم الثاني -->
         <!-- بداية القسم الثالث -->
         <div class="recitrw">
             <div class="row">
-                <div class="col-md-2">
-                    <span style="font-weight: bold;">تفاصيل الفاتورة</span>
+                <div class="col-md-2 ctrspan">
+                    <span style="font-weight: bold;font-size: larger">تفاصيل الفاتورة</span>
                 </div>
                 <!-- بداية الجدول الخاص ببيانات البيع -->
                 <div class="col-md-10">
-                    <table style="width: 100%">
+                    <table style="width: 100%;border-collapse: separate;border-spacing: 5px;">
                         <tr>
                             <td><span> بيع</span></td>
-                            <td class="txtctrl"><span></span></td>
+
                             <td><span> جملة1</span></td>
-                            <td class="txtctrl"><span></span></td>
+
                             <td><span> جملة2</span></td>
-                            <td class="txtctrl"><span></span></td>
+
                             <td><span> جملة3</span></td>
-                            <td class="txtctrl"><span></span></td>
+
                             <td><span> جملة4</span></td>
-                            <td class="txtctrl"><span></span></td>
+
                             <td><span> جملة5</span></td>
+
+                        </tr>
+                        <tr>
                             <td class="txtctrl"><span></span></td>
+                            <td class="txtctrl"><span></span></td>
+                            <td class="txtctrl"><span></span></td>
+                            <td class="txtctrl"><span></span></td>
+                            <td class="txtctrl"><span></span></td>
+                            <td class="txtctrl"><span></span></td>
+
                         </tr>
                     </table><!-- نهاية الجدول الخاص ببيانات البيع -->
                 </div>
@@ -218,13 +243,13 @@
                             <td colspan="5">الكمية</td>
                         </tr>
                         <tr>
-                            <td style="width: 90px">
+                            <td style="width: 4.81%">
                                 <input type="text" class="form-control inputbg">
                             </td>
-                            <td style="width: 160px">
+                            <td style="width: 8.55%">
                                 <input type="text" class="form-control inputbg">
                             </td>
-                            <td>
+                            <td style="width: 67.77%">
                                 <input type="text" class="form-control inputbg">
                             </td>
                             <td style="width: 19%">
