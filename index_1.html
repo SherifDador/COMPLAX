@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="css/fontawesome.min.css"><!-- for fontawesome -->
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css"> <!-- for arabic bootstrap -->
+    <link rel="stylesheet" href="css/main.css"><!-- for css main -->
+    <title>فاتورة جديدة</title>
+</head>
+
+<body>
+    <!--      header section starts here-->
+    <div class="container">
+        <div class="row headrw">
+            <div class="col-md-3">
+                <span>الرقم التسلسلي : 1</span>
+            </div>
+            <div class="col-md-3">
+                <span>ID:753338</span>
+            </div>
+            <div class="col-md-2">
+                <input type="date" name="bday" class="form-control" style="text-align: center ; height: 35px">
+            </div>
+            <div class="col-md-2 offset-md-1">
+                <select class="custom-select" style="text-align: center ; height: 35px">
+                    <option value="1">كاش</option>
+                    <option value="2">فيزا</option>
+                    <option value="3">اجل</option>
+                    <option value="4">صراف</option>
+                    <option value="5">شيك</option>
+                </select>
+            </div>
+        </div>
+
+
+        <!-- القسم الثاني  -->
+        <!-- بيانات العميل -->
+        <div class="row clegend">
+            <div class="col-md-5 ">
+                <legend>بيانات العميل</legend>
+                <div class="row fborder">
+                    <div class="col-md-6 ">
+                        <fieldset>
+                            <!-- بيانات كود العميل -->
+                            <label>كود العميل</label>
+                            <div class="input-group ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text btncolor " id="basic-addon1">
+                                        <i class="fas fa-list-ol btncolor"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <!-- بيانات جوال العميل -->
+                            <label>جوال العميل</label>
+                            <div class="input-group ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text btncolor" id="basic-addon1">
+                                        <i class="fas fa-mobile-alt fa-lg btncolor"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <!-- بيانات خدمة التوصيل -->
+                            <label>خدمة التوصيل</label>
+                            <div class="input-group ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text btncolor " id="basic-addon1">
+                                        <i class="fas fa-truck btncolor"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control">
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                        <fieldset>
+                            <!-- بيانات اسم العميل -->
+                            <label>اسم العميل</label>
+                            <div class="input-group ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text btncolor" id="basic-addon1">
+                                        <i class="fas fa-user-alt btncolor"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <!-- بيانات خصم العميل -->
+                            <label>خصم العميل</label>
+                            <div class="input-group ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text btncolor" id="basic-addon1">
+                                        <i class="fas fa-percent btncolor"></i>
+                                    </span>
+                                </div>
+                                <select class="custom-select">
+                                    <option value="1">بيع عميل</option>
+                                    <option value="2">جملة 1</option>
+                                    <option value="3">جملة 2</option>
+                                    <option value="4">جملة 3</option>
+                                    <option value="5">جملة 4</option>
+                                    <option value="5">جملة 5</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <!-- بيانات الخصم -->
+                            <label>الخصم</label>
+                            <div class="input-group ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text btncolor" id="basic-addon1">
+                                        <i class="fas fa-money-bill-alt btncolor"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control">
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 offset-md-1">
+                <!-- الاجمالي النهائي -->
+                <legend>الإجمالي النهائي</legend>
+                <div class="row fborder">
+                    <div class="col-md-12 ">
+                        <label class="col-md-6">الصافي بعد الخصم</label>
+                        <!-- بيانات كود العميل -->
+                        <div class="input-group col-md-12 ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text btncolor" id="basic-addon1">
+                                    <i class="fas fa-hand-holding-usd btncolor"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-12 ">
+                        <label class="col-md-6">المبلغ المدفوع</label>
+                        <!-- بيانات المبلغ المدفوع -->
+                        <div class="input-group col-md-12">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text btncolor" id="basic-addon1">
+                                    <i class="fas fa-cash-register btncolor"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-12 ">
+                        <label class="col-md-6">المتبقي</label>
+                        <!-- بيانات كود العميل -->
+                        <div class="input-group col-md-12">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text btncolor" id="basic-addon1">
+                                    <i class="fas fa-coins btncolor"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section 2 ends Here -->
+        <!-- Section 3 starts Here -->
+
+
+        <div class="row recitrw">
+            <div class="col-md-2">
+                <span style="font-weight: bold;">تفاصيل الفاتورة</span>
+            </div>
+            <div class="col-md-10">
+                <table style="width: 100%">
+                    <tr>
+                        <td><span> بيع</span></td>
+                        <td class="txtctrl"><span></span></td>
+                        <td><span> جملة 1</span></td>
+                        <td class="txtctrl"><span></span></td>
+                        <td><span> جملة 2</span></td>
+                        <td class="txtctrl"><span></span></td>
+                        <td><span> جملة 3</span></td>
+                        <td class="txtctrl"><span></span></td>
+                        <td><span> جملة 4</span></td>
+                        <td class="txtctrl"><span></span></td>
+                        <td><span> جملة 5</span></td>
+                        <td class="txtctrl"><span></span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Section 3 ends Here -->
+        <!-- Section 4 starts Here -->
+        <div class="row">
+            <div class="col-md-1" style="padding-right: 15px; 
+    padding-left: 15px; ">
+                <span>#</span>
+                <input type="text" class="form-control inputbg ">
+            </div>
+            <div class="col-md-2">
+                <span>كود الصنف</span>
+                <input type="text" class="form-control inputbg">
+            </div>
+            <div class="col-md-6">
+                <span>اسم الصنف</span>
+                <input type="text" class="form-control inputbg">
+            </div>
+            <div class="col-md-3 ">
+                <span>الكمية</span>
+                <input type="text" class="form-control inputbg">
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col-md-12">
+                <table class="table table-borderless " style="width: 100%">
+                    <tr>
+                        <td>
+                            <span>#</span>
+
+                        </td>
+                        <td>
+                            <span>كود الصنف</span>
+
+                        </td>
+                        <td style="width: 90px">
+                            <span>اسم الصنف</span>
+
+                        </td>
+                        <td style="width: 90px">
+                            <span>الكمية</span>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 90px">
+                            <input type="text" class="form-control inputbg" style="width: 90px">
+                        </td>
+                        <td style="width: 140px">
+                            <input type="text" class="form-control inputbg" style="width: 140px">
+                        </td>
+                        <td style="width: 568px">
+                            <input type="text" class="form-control inputbg" style="width: 568px">
+                        </td>
+                        <td style="width: 310px">
+                            <input type="text" class="form-control inputbg" style="width: 310px">
+                        </td>
+                    </tr>
+
+                </table> -->
+
+    </div>
+    </div>
+    <!-- Section 4 ends Here -->
+    <!-- table of contents starts Here -->
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-sm table-bordered table-hover tabofcont">
+                <tr>
+                    <th style="width: 90px">#</th>
+                    <th>كود الصنف</th>
+                    <th>الصنف</th>
+                    <th>الخصم</th>
+                    <th>السعر</th>
+                    <th>الكمية</th>
+                    <th>الاجمالي</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td style="width: 90px"><span>1</span></td>
+                    <td style="width: 140px"><span>176203</span></td>
+                    <td><span>شنطه جلد 1031 </span></td>
+                    <td class="tdwdth"><input type="text" class="form-control"></td>
+                    <td class="tdwdth"><input type="text" class="form-control"></td>
+                    <td class="tdwdth"><input type="text" class="form-control"></td>
+                    <td class="tdwdth"><input type="text" class="form-control"></td>
+                    <td style="width: 30px"><a href="#" style="color: red ">X</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 90px"><span>2</span></td>
+                    <td>176203</td>
+                    <td><span>شنطه جلد 1031 </span></td>
+                    <td style="width: 70px"><input type="text" class="form-control"></td>
+                    <td style="width: 70px"><input type="text" class="form-control"></td>
+                    <td style="width: 70px"><input type="text" class="form-control"></td>
+                    <td style="width: 70px"><input type="text" class="form-control"></td>
+                    <td style="width: 30px"><a href="#" style="color: red ">X</a></td>
+                </tr>
+            </table>
+            <!-- buttons starts Here -->
+            <div class="row">
+                <div class="col-md-4  col-4 center-btn">
+                    <a class="btn btn-primary" style="color: #FFF">جديد</a>
+                </div>
+                <div class=" col-md-4 col-4 center-btn">
+                    <a class="btn btn-secondary" style="color: #FFF">كاش</a>
+                </div>
+                <div class="col-md-4 col-4 center-btn">
+                    <a class="btn btn-success" style="color: #FFF">اعتماد الفاتورة</a>
+                </div>
+            </div> <!-- buttons ends Here -->
+        </div>
+    </div>
+
+    <!-- table of contents ends Here -->
+    </div>
+
+    <!--      header section ends here-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js,  Bootstrap JS,then fontawsome -->
+    <script src="js/jQuery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script defer src="js/all.js"></script>
+</body>
+
+</html>
