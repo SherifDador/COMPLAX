@@ -17,11 +17,59 @@ body {
 /* 
 برواز قطاعات الفاتورة 
 */
+.sector {
+
+    border-radius: 10px;
+    margin-bottom: 6px;
+    background-color: #FFF;
+    vertical-align: middle;
+    padding: 14px;
+}
+
+/* 
+Insert Comment 
+*/
+.number {
+    background: #007bff;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.ltborder {
+    border-left: 1px solid #FFF
+}
+
 .fborder {
     border: 1px solid #CCC;
     padding: 10px;
     border-radius: 10px;
-    background-color: #FFF;
+    background-color: transparent
+}
+
+.plegend {
+    text-align: center;
+    color: #737678;
+    font-weight: bolder;
+}
+
+.netctr {
+    height: 3rem;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.fborder label {
+    font-weight: bold;
 }
 
 .btncolor {
@@ -32,7 +80,8 @@ body {
 .btncolor2 {
     background-color: #dc3545;
     color: #FFF;
-
+    width: 4.25rem;
+    text-align: center
 }
 
 .svg-inline--fa.fa-w-20 {
@@ -81,17 +130,26 @@ body {
 
     text-align: center;
     color: #000;
-    margin-bottom: 1rem;
     border: 1px solid transparent;
     border-radius: .25rem;
 }
 
+.ctrspan {
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
 
 .txtctrl {
     border: 1px solid black;
-    width: 90px;
+    border-radius: .25rem;
+    width: 16.66%;
     background-color: #FFF;
-    vertical-align: middle
+    vertical-align: middle;
+    height: 30px;
 }
 
 .inputbg {
@@ -104,7 +162,7 @@ body {
     background-color: #dc3545;
     color: #FFF;
     font-size: 22px;
-    padding: 5px;
+    padding: 4px;
     border-radius: 5px;
 }
 
