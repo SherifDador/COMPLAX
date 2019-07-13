@@ -20,12 +20,17 @@ body {
 برواز قطاعات الفاتورة 
 */
 .sector {
-
+    border: 1px solid #CCC;
     border-radius: 10px;
     margin-bottom: 6px;
     background-color: #FFF;
     vertical-align: middle;
     padding: 14px;
+}
+
+.sector label {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 /* 
@@ -50,29 +55,51 @@ Insert Comment
 }
 
 .fborder {
-    border: 1px solid #CCC;
-    padding: 10px;
+
+    padding: 10px 10px 0px 10px;
     border-radius: 10px;
     background-color: transparent
 }
 
 .plegend {
     text-align: center;
-    color: #737678;
-    font-weight: bolder;
+    color: #000;
+    margin-bottom: 0px;
 }
 
 .netctr {
-    height: 3rem;
-    font-size: 30px;
+
+    font-size: 24px;
     font-weight: 900;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: center;
-    width: 0;
+    width: 50%;
+    background-color: #FFF;
+    color: #000;
+    border-radius: 7px;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    line-height: 1.42857143;
 }
 
 .fborder label {
     font-weight: bold;
+    display: block;
+}
+
+.fborder span {
+    font-size: 18px;
+
+}
+
+.fborder .form-control {
+    display: inline;
+    width: 74%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    height: 62px;
+    color: #27a544;
 }
 
 .btncolor {
@@ -116,7 +143,7 @@ Insert Comment
 
 .headrw span {
     padding-top: 10px;
-    font-weight: 700;
+    font-size: 18px;
 }
 
 /* 
@@ -145,7 +172,13 @@ Insert Comment
 .rwformat tr {}
 
 .tblrecit tr {
-    height: 10px;
+    height: 31px;
+}
+
+.leftsec {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 10px;
 }
 
 /* 
@@ -217,7 +250,12 @@ Insert Comment
 
 .table {
     background-color: #FFF;
+    margin-bottom: 5px;
 
+}
+
+.table td {
+    padding: 5px;
 }
 
 .tabofcont .table thead tr th,
@@ -242,7 +280,7 @@ Insert Comment
 }
 
 .btn-danger {
-    border-radius: 7px;
+    border-radius: 2px;
 }
 
 .pro-data table td {
