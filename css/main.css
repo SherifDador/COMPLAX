@@ -5,15 +5,49 @@ html * {
 html {
     height: 100%;
     margin: 0 auto;
-
 }
-
-
 
 body {
     background-color: #EDF4F8;
     font-size: 0.75rem;
+}
 
+/* 
+لتنسيق رأس الفورم */
+.headrw {
+    background-color: #b8daff;
+    text-align: center;
+    -webkit-border-radius: 0px 0px 15px 15px;
+    border-radius: 0px 0px 15px 15px;
+    border: 1px solid #bee5eb;
+}
+
+/* 
+بداية القسم الثاني
+*/
+/*كلاس تنسيق العناوين الرئيسية */
+
+.plegend {
+    text-align: center;
+    color: #000;
+    margin-bottom: 0px;
+}
+
+/* 
+تنسيق اللوجو بجانب العناوين الرئيسية 
+*/
+.number {
+    background: #007bff;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 15px 15px 15px 0px;
 }
 
 /* 
@@ -34,65 +68,34 @@ body {
 }
 
 /* 
-Insert Comment 
+لتنسيق الوان الازرار المصاحبة لمربعات النصوص
 */
-.number {
-    background: #007bff;
-    color: #fff;
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-    font-size: 0.8em;
-    margin-right: 4px;
-    line-height: 30px;
-    text-align: center;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-    border-radius: 15px 15px 15px 0px;
+.btncolor {
+    background-color: #b8daff;
+    color: #5C6D80;
 }
 
-.ltborder {
-    border-left: 1px solid #FFF
+/* 
+لتنسيق القطاع الايسر الخاص بإجماليات الفاتورة*/
+.leftsec {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 10px;
 }
 
 .fborder {
-
     padding: 10px 10px 0px 10px;
-    border-radius: 10px;
     background-color: transparent
 }
 
-.plegend {
-    text-align: center;
-    color: #000;
-    margin-bottom: 0px;
-}
-
-.netctr {
-
-    font-size: 24px;
-    font-weight: 900;
+/* 
+لتنسيق الخانات الخاصة بالإجماليات
+*/
+.fborder .form-control {
     margin-bottom: 5px;
-    text-align: center;
-    width: 50%;
-    background-color: #FFF;
-    color: #000;
     border-radius: 7px;
-    height: calc(2.25rem + 2px);
     padding: .375rem .75rem;
     line-height: 1.42857143;
-}
-
-.fborder label {
-    font-weight: bold;
-    display: block;
-}
-
-.fborder span {
-    font-size: 18px;
-
-}
-
-.fborder .form-control {
     display: inline;
     width: 74%;
     text-align: center;
@@ -100,52 +103,23 @@ Insert Comment
     font-weight: bolder;
     height: 62px;
     color: #27a544;
+    background-color: #FFF;
 }
 
-.btncolor {
-    background-color: #b8daff;
-    color: #5C6D80;
-}
-
-.btncolor2 {
-    background-color: #dc3545;
-    color: #FFF;
-    width: 4.25rem;
-    text-align: center
-}
-
-.svg-inline--fa.fa-w-20 {
-    width: 15.3px;
-}
-
-.headrw {
-    background-color: #b8daff;
-    text-align: center;
-    -webkit-border-radius: 0px 0px 15px 15px;
-    border-radius: 0px 0px 15px 15px;
-    border: 1px solid #bee5eb;
-
-}
-
-.modcol {
-    max-width: 2.333333%;
-}
-
-.clegend {
-    margin-bottom: 20px;
-}
-
-.clegend legend {
-    text-align: center;
-    color: #5D8AA8;
+/* 
+لتنسيق عناوين مربعات النص */
+.fborder label {
     font-weight: bold;
+    display: block;
 }
 
-.headrw span {
-    padding-top: 10px;
+.fborder span {
     font-size: 18px;
 }
 
+/* 
+تفاصيل الفاتورة
+*/
 /* 
 خاص بجدول تفاصيل الفاتورة 
 */
@@ -153,13 +127,37 @@ Insert Comment
     background-color: #b8daff;
     text-align: center;
     color: #000;
-
     border: 1px solid transparent;
     border-radius: .25rem;
 }
 
 /* 
-خاص بتنسيق خلفية الجداول 
+للتحكم في عناصر السمبان في الجدول 
+*/
+.ctrspan {
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 
+للتحكم في عناصر مربعات النصوص بالجدول*/
+.txtctrl {
+    border: 1px solid black;
+    border-radius: .25rem;
+    width: 16.66%;
+    background-color: #FFF;
+    vertical-align: middle;
+    height: 30px;
+}
+
+/* 
+بداية جدول المشتريات*/
+/* 
+خاص بتنسيق عناصر الجدول 
 */
 .tblrecit {
 
@@ -169,16 +167,11 @@ Insert Comment
     border-radius: .25rem;
 }
 
-.rwformat tr {}
-
+/* 
+خاص بتنسيق ارتفاع صفوف الجدول 
+*/
 .tblrecit tr {
     height: 31px;
-}
-
-.leftsec {
-    background-color: #FFF;
-    border: 1px solid #CCC;
-    border-radius: 10px;
 }
 
 /* 
@@ -198,23 +191,10 @@ Insert Comment
     padding: 2px;
 }
 
-
-.ctrspan {
-    display: flex;
-    -webkit-flex-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.txtctrl {
-    border: 1px solid black;
-    border-radius: .25rem;
-    width: 16.66%;
-    background-color: #FFF;
-    vertical-align: middle;
-    height: 30px;
+/* 
+خاص بالتحكم في عرض اعمدة الجدول*/
+.tdwdth {
+    width: 70px;
 }
 
 /* 
@@ -224,67 +204,42 @@ Insert Comment
     background-color: #b8daff;
 }
 
-.lblstyle {
+/* 
+خاص بازرار حذف العناصر
+*/
 
+.btncolor2 {
     background-color: #dc3545;
     color: #FFF;
-    font-size: 12px;
-    border-radius: 5px;
-}
-
-.tdwdth {
-    width: 70px;
-}
-
-.tabofcont {
-    text-align: center;
-}
-
-.tabofcont span {
-    font-size: 20px;
-}
-
-.pro-data {
-    margin-bottom: 20px;
-}
-
-.table {
-    background-color: #FFF;
-    margin-bottom: 5px;
-
-}
-
-.table td {
-    padding: 5px;
-}
-
-.tabofcont .table thead tr th,
-.table thead th {
-    vertical-align: middle;
-}
-
-.tabofcont tr {
-    height: 50px;
-}
-
-.center-btn {
-    text-align: center;
-
-}
-
-.btn {
-    font-size: 12px;
-    font-weight: bold;
-    width: 101px;
-
+    width: 4.25rem;
+    text-align: center
 }
 
 .btn-danger {
     border-radius: 2px;
 }
 
-.pro-data table td {
-    border-top: 0px;
-    padding: 5px;
+.svg-inline--fa.fa-w-20 {
+    width: 15.3px;
+}
 
+.table {
+    background-color: #FFF;
+    margin-bottom: 5px;
+}
+
+.table td {
+    padding: 5px;
+}
+
+/* 
+للتحكم في ازرار الجديد و الكاش و اضافة فاتورة*/
+.center-btn {
+    text-align: center;
+}
+
+.btn {
+    font-size: 12px;
+    font-weight: bold;
+    width: 101px;
 }
